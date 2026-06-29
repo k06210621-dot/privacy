@@ -19,6 +19,7 @@
     .lang { float: right; }
     .lang a { color: #007AFF; text-decoration: none; margin-left: 8px; }
     code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
+    .no-collect { background: #e8f5e9; padding: 12px 16px; border-left: 4px solid #4caf50; margin: 16px 0; border-radius: 4px; }
   </style>
 </head>
 <body>
@@ -29,26 +30,32 @@
   <h1>PredictX Sports 隱私權政策</h1>
   <p class="updated">最後更新：2026-06-29</p>
 
-  <p>感謝您使用 PredictX Sports（以下簡稱「本 App」）。本隱私權政策說明本 App 如何蒐集、使用、儲存及保護您的個人資料。請您在使用前詳閱以下內容。</p>
+  <p>感謝您使用 PredictX Sports（以下簡稱「本 App」）。本隱私權政策說明本 App 如何蒐集、使用、儲存及保護您的資料。請您在使用前詳閱以下內容。</p>
 
   <h2>1. 我們蒐集的資料</h2>
-  <p>本 App 為純資訊提供 App，不接受投注、不銷售預測商品。我們蒐集以下資料：</p>
+  <p>本 App 為純資訊提供 App，不接受投注、不銷售預測商品。App 本身<strong>不追蹤、不記錄使用者的點擊行為或瀏覽歷史</strong>。我們僅蒐集以下技術性識別資訊：</p>
   <ul>
     <li><strong>APNs 推播識別碼</strong>：您開啟推播通知時，系統產生的 device token（用於發送高信心度賽事推播；您可隨時在 App 內關閉推播）</li>
-    <li><strong>訂閱資訊</strong>：透過 Apple StoreKit 處理的訂閱等級（Free / Basic / Standard / Premium）、交易紀錄（付款資料由 Apple 處理，本 App 不直接儲存信用卡資訊）</li>
-    <li><strong>推論觀看歷史</strong>：您查看過的 AI 推論結果（用於個人化驗證率統計）</li>
-    <li><strong>裝置偏好設定</strong>：收藏的隊伍、深色模式偏好、解鎖的賽事（僅儲存於您裝置本地，不會上傳至伺服器）</li>
+    <li><strong>訂閱資訊</strong>：透過 Apple StoreKit 處理的訂閱等級（Free / Basic / Standard / Premium），交易紀錄由 Apple 處理，本 App 不直接儲存信用卡資訊</li>
     <li><strong>廣告識別碼 (IDFA)</strong>：僅在您同意時用於 Google AdMob 個人化廣告（您可隨時在 iOS 設定 → 隱私權 → 追蹤中關閉）</li>
   </ul>
-  <p><em>註：本 App 不蒐集您的 email、姓名、Apple ID 個人識別資訊，無註冊或登入機制。裝置的 iOS 版本、機型等資訊亦不在本 App 蒐集範圍。</em></p>
+  <div class="no-collect">
+    <p><strong>本 App 不會蒐集以下資料：</strong></p>
+    <ul style="margin-top: 8px;">
+      <li>email、姓名、Apple ID 等個人識別資訊（無註冊或登入機制）</li>
+      <li>地理位置資訊</li>
+      <li>聯絡人、照片、裝置儲存內容</li>
+      <li>iOS 版本、機型等裝置資訊</li>
+      <li><strong>App 內點擊行為、瀏覽歷史、解鎖紀錄等使用模式</strong>（僅儲存於裝置本地，不上傳至伺服器）</li>
+    </ul>
+  </div>
 
   <h2>2. 資料用途</h2>
   <ul>
     <li>提供每日球類賽事（MLB / NPB / CPBL / NBA）AI 推論內容</li>
-    <li>管理會員訂閱（3 級制：Basic / Standard / Premium，含免費方案）與恢復購買功能</li>
-    <li>顯示個人化推論歷史與驗證率</li>
+    <li>管理會員訂閱（Free / Basic / Standard / Premium）與恢復購買功能</li>
+    <li>發送高信心度賽事推播通知（Premium 用戶限定，可隨時關閉）</li>
     <li>提供 Google AdMob 廣告（您可透過系統設定關閉）</li>
-    <li>改進 App 品質與使用者體驗</li>
   </ul>
 
   <h2>3. 第三方服務</h2>
@@ -61,21 +68,23 @@
   <p>這些服務有其各自的隱私權政策，本 App 不對其內容負責。</p>
 
   <h2>4. 資料儲存與安全</h2>
-  <p>所有資料透過 HTTPS 加密傳輸。後端使用 PostgreSQL 資料庫儲存 APNs device token、訂閱等級、推論觀看歷史。裝置端偏好設定（收藏、深色模式、解鎖賽事）儲存於 iOS UserDefaults，僅存在於您的裝置本地。App 透過 Google AdMob 顯示的廣告可能涉及跨裝置追蹤，您可隨時在 iOS 設定中關閉。</p>
+  <p>所有資料透過 HTTPS 加密傳輸。後端僅儲存 APNs device token 與訂閱等級（用於推播分眾與管理訂閱），不使用任何使用者行為追蹤技術。裝置端偏好設定（收藏的隊伍、深色模式偏好、解鎖的賽事）僅儲存於您的 iOS UserDefaults，不會上傳至伺服器。App 透過 Google AdMob 顯示的廣告可能涉及跨裝置追蹤，您可隨時在 iOS 設定中關閉。</p>
 
   <h2>5. 資料保留期限</h2>
   <ul>
     <li>APNs 推播 token：保留至您解除安裝 App 或手動關閉推播</li>
-    <li>推論觀看歷史：保留 90 天後自動刪除</li>
+    <li>訂閱等級：保留至您解除安裝 App 或取消訂閱</li>
     <li>裝置端偏好設定：隨時可透過解除安裝 App 清除</li>
+    <li>本 App 不儲存任何使用行為歷史</li>
   </ul>
 
   <h2>6. 您的權利</h2>
   <p>您有權：</p>
   <ul>
-    <li>查詢、修改、刪除您的個人資料</li>
+    <li>查詢、修改、刪除您的資料（透過 iOS 設定或聯絡我們）</li>
     <li>取消訂閱（透過 iOS 設定 → Apple ID → 訂閱）</li>
     <li>關閉個人化廣告（透過 iOS 設定 → 隱私權 → 追蹤）</li>
+    <li>隨時關閉推播通知（透過 App 內設定或 iOS 設定）</li>
   </ul>
 
   <h2>7. 兒童隱私</h2>
